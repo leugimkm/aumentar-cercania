@@ -1,8 +1,8 @@
-export default function Button({ text, fn, n}) {
+export default function Button({ text, callback, index }) {
   return (
     <button 
       className="btn btn-sm md:btn-lg btn-outline btn-info"
-      onClick={() => fn(n)}>
+      onClick={() => callback(index)}>
       { text }
     </button>
   )
